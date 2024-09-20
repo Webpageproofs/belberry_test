@@ -2702,14 +2702,34 @@ textarea:focus::placeholder {
     margin-bottom: 12px; }
 
 .partners-col {
-  padding: 0 10px; }
-
-.partners-item {
-  background-color: #f5f6f6;
-  border-radius: 12px;
-  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+  width: 203px;
+  height: 100px; }
+  @media (max-width: 1140px) {
+    .partners-col {
+      width: 154px;
+      height: 80px; } }
+
+.owl-carouel-partners .owl-stage-outer,
+.owl-carousel.owl-carouel-partners-reverse .owl-stage-outer,
+.owl-carouel-partners.owl-drag .owl-item,
+.owl-carouel-partners-reverse.owl-drag .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.partners-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: #f5f6f6;
+  border-radius: 12px;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2722,9 +2742,6 @@ textarea:focus::placeholder {
       padding: 0 5px; } }
   .partners-item img {
     max-width: 100%; }
-    @media (max-width: 1140px) {
-      .partners-item img {
-        max-width: 90%; } }
 
 .partners-item-riat {
   padding-left: 44px;
